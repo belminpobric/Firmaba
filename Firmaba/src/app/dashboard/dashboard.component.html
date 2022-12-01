@@ -1,0 +1,94 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Firma.ba</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Naziv firme</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Opcenito</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Opcenito 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Opcenito 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Opcenito 3</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Postavke</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a routerLink="/vrste">Vrste</a>
+                    </li>
+                    <li>
+                        <a routerLink="/grupe">Grupe</a>
+                    </li>
+                    <li>
+                        <a routerLink="/artikli">Artikli</a>
+                    </li>
+                    <li>
+                        <a routerLink="/kupci">Kupci</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Izlazni racuni</a>
+            </li>
+            <li>
+                <a href="#">Ulazni racuni</a>
+            </li>
+        </ul>
+
+        
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" onclick="toggleFunction()" class="btn text-white" style="background-color: #233aa1;">
+                    <i class="fas fa-align-left"></i>
+                    <span></span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <span class="nav-link text-dark" href="#"><i class="fas fa-user mr-1"></i>User Name</span>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#">Logout<i class="fas fa-sign-out-alt ml-1"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <router-outlet></router-outlet>
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="line"></div>
+
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="line"></div>
+
+        <h3>Lorem Ipsum Dolor</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
